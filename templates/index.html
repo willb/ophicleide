@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head><body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Word2Vec example</h1>
+    <p class="lead">Enter a name for your new model and a URL for your source text below.</p>
+  </div>
+
+  <div class="col-lg-4">
+
+    <form class="form-signin" action="/new" method="POST">
+      <input type="text" name="modelName" class="form-control" placeholder="Model name" required autofocus>
+      <input type="text" name="source" class="form-control" placeholder="Source URL" required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Train a model</button>
+    </form>
+  </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body></html>

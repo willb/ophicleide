@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head><body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Word2Vec example</h1>
+    <p class="lead">Enter a query term for model <tt>{{ modelname }}</tt>.  Need some suggestions?  How about {{ words }}?</p>
+  </div>
+
+  <div class="col-lg-4">
+
+    <form class="form-signin" action="/query" method="GET">
+      <input type="hidden" name="modelName" value="{{ modelname }}" />
+      <input type="text" name="term" class="form-control" placeholder="Query term" required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Find synonyms</button>
+    </form>
+  </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body></html>
